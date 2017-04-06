@@ -1,6 +1,6 @@
-EBS
+**EBS**
 
-https://aws.amazon.com/ebs/faqs/
+(https://aws.amazon.com/ebs/faqs/)
 
 Elastic Block Storage
 
