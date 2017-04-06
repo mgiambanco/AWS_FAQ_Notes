@@ -1,6 +1,8 @@
-SQS
+**SQS**
+
+[AWS SQS FAQ](https://aws.amazon.com/sqs/faqs/)
+
 Simple Query Service
-https://aws.amazon.com/sqs/faqs/
 
 * SQS now provides FIFO (first in, first out)
 * Standard queues provide loose FIFO that attempts to preserve the order of the messages but is not guaranteed
