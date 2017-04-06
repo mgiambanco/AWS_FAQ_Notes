@@ -1,5 +1,7 @@
 **Route 53**
 
+[AWS Route 53 FAQ](https://aws.amazon.com/route53/faqs/)
+
 DNS
 
 * 53 is the port of DNS
