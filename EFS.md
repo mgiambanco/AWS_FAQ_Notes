@@ -1,6 +1,6 @@
-EFS
+**EFS**
 
-https://aws.amazon.com/efs/faq/
+[AWS EFS FAQ](https://aws.amazon.com/efs/faq/)
 
 Scalable block file storage
 
