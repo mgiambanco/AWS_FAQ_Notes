@@ -1,5 +1,7 @@
-Redshift
+**Redshift**
+
 Petabyte scale data warehouse
+
 This is for BIG Data and Data warehousing
 
 * Redshift uses SQL via ODBC and JDBC
