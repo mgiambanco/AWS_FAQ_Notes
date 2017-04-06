@@ -1,0 +1,77 @@
+S3
+Simple Storage Service
+Low latency reliable object based storage
+
+* Objects can range from 0 bytes to a maximum of 5 TB
+* Consider using Miltipart Upload for objects bigger then 100MB
+* 3 Primary Types
+    * S3 standard for general purpose storage
+    * IA - Infrequent Access for long lived but less frequent accessed data
+    * Glacier for long term archive
+* Use Reduced Redundancy Storage (RRS) for non-critical, reproducible data at lower levels of redundancy
+* Use Multi Object Delete to delete large numbers of objects
+* S3 is a key-based object store
+* Each S3 object must have a unique key to it's bucket
+* S3 standard is designed for 99.99% availability
+* S3 IA is designed for 99.9% availability
+* S3 in all regions provide Read-After-Write for PUTS of new objects
+* S3 in all regions provide Eventual Consistency for OVERWRITE Puts and Deletes
+* S3 scales automatically if load increases
+* S3 can be used with BitTorrent
+* S3 has an SLA at https://aws.amazon.com/s3/sla/
+* S3 provides up to 100 buckets per account. See http://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html to increase the limit
+* S3 buckets exist in Regions. 
+* S3 can be used regardless of region your located in
+* Access is controlled by ACLs (Access Control Lists)
+* Upload and Download can happen via HTTP or HTTPS
+* Server Side Encryption (SSE) can be used for extra security or SSE-C that includes Customer Provided Keys
+* You can use your own encryption to encrypt files before sending to S3
+* Access can be controlled via:
+    * IAM policies
+    * Access Control Lists
+    * Bucket Policies
+    * Query String Authentication
+* Access logs can be created to support auditing
+* Data can be stored in the EU at EU Ireland or EU Frankfurt to comply with EU privacy laws
+* You can limit access to an S3 bucket via a VPC Endpoint or a set of endpoints using S3 bucket policies
+* S3 Standard and IA are designed to provide eleven 9s of durability over a given year
+* S3 uses both Content-MD5 checksums and cyclic redundancy checks (CRCs) to detect data corruption
+* These checks are performed on data at rest and repairs any corruption using redundant data
+* Versioning is available on S3 buckets
+* Versioning provides an extra level of protection against accidental deletes
+* Use Lifecycle rules with versioning to implement rollback 
+* Deletes can be prevented with Versioning's MFA Delete capability which uses multi-factor authentication
+* S3 Standard - IA is best for long term data storage; backups, disaster recovery files
+* IA has the same performance as S3 Standard
+* S3 IA is designed for eleven 9s of durability and 99.9% availability
+* Lifecycle policies can transition objects from Standard to Standard - IA
+* Standard IA has a SLA at https://aws.amazon.com/s3/sla/
+* Standard IA has a minimum object size of 128kb - smaller then 128KB will incur storage charges as if the object was 128KB
+* Lifecycle policies can transition objects from IA to Glacier
+* Glacier objects are only available via the S3 API or S3 Console
+* Glacier Expedited retrieval are typically made available within 1-5 minutes
+* Glacier Standard retrieval between 3-5 hours
+* Glacier Bulk retrieval within 5-12 hours
+* You can retrieve 10GB / month from Glacier for free
+* S3 notifications can be send in response to S3 actions such as Put, Post, Copy, Delete.
+* Notifications can be sent via SNS, SQS or Lambda
+* S3 can host static websites (NO code execution here such as PHP, Ruby, Python, etc... ) (JUST HTML, CSS, JS, images, documents, etc...)
+* You can assign a hostname to an S3 bucket such as example.com
+* S3 can do website redirects
+* S3 objects can be tagged
+* Up to 10 tags can be added to an object
+* Tags can be changed at any time during the lifetime of an object
+* Object tags WILL be replicated across regions using Cross Region Replication
+* There is a fee for object tags - $0.01 per 10,000 tags
+* Use S3 Analytics to analyze storage access patterns and transition data to the right storage class
+* Use S3 Inventory to speed up business workflows and big data jobs
+* You can use CloudWatch to monitor S3 events and metrics
+* Use S3 Lifecycle Management to transition objects between S3 storage classes 
+* Use CRR (Cross Region Replication) to automatically replicate data across AWS regions
+* CRR can reduce latency across different geographic regions
+* Use S3 Transfer Acceleration to speed up transferring files across different geographic regions.
+* S3 supports IPv6
+* Using IPv6 will NOT impact performance
+* IPv6 access will appear in the Server Access Log if S3 server access log feature is enabled
+* If policies are used to grant or restrict access via IP addresses, these policies need to be updated for IPv6
+* IPv6 can be used in all Regions except China.
