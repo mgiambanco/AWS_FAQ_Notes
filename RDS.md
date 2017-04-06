@@ -1,5 +1,7 @@
 **RDS**
 
+[AWS RDS FAQ](https://aws.amazon.com/rds/faqs/)
+
 Relational Database Service
 
 * Supports MySQL, MariaDB, Oracle, SQL Server, PostgreSQL
