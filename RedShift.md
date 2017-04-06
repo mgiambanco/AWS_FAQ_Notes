@@ -1,5 +1,7 @@
 **Redshift**
 
+[AWS Redshift FAQ](https://aws.amazon.com/redshift/faqs/)
+
 Petabyte scale data warehouse
 
 This is for BIG Data and Data warehousing
