@@ -1,5 +1,9 @@
-SES
+**SES**
+
+[AWS SES FAQ](https://aws.amazon.com/ses/faqs/)
+
 Simple Email Service
+
 Use this to send or receive email
 
 * SES will scan the outgoing email to make sure the content meets ISP standards
