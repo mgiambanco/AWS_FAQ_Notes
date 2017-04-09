@@ -25,7 +25,7 @@ Relational Database Service
     * Payment options are No Upfront, Partial Upfront and All Upfront
     * You can purchase up to 40 reserved instances - fill out https://aws.amazon.com/contact-us/request-to-increase-the-amazon-rds-db-instance-limit/ to request more
     * Existing DB instances CAN be converted into reserved instance
-    * Reserved instances CAN NOT be moved between regions but CAN be moved between AZs in the sam Region
+    * Reserved instances CAN NOT be moved between regions but CAN be moved between AZs in the same Region
     * Read Replicas CAN be reserved
 * RDS uses EBS volumes for database and log storing
 * MySQL and Oracle may see performance improvements by scaling up storage
