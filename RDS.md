@@ -33,7 +33,7 @@ Relational Database Service
 * Backups are Point-In-Time recovery
 * When automated backups are turned on, full daily snapshots are automatically taken
 * You can initiate a DB snapshot at anytime, how often as you'd like
-* Automated backups are enabled by default and have a 1 day retention period.
+* Automated backups are enabled by default and have a 1 day retention period for Aurora, 7 days for MySQL, MariaDB, PostgreSQL, Oracle & SQL Server.
 * You can choose the preferred backup window time
 * Backups are stored in S3
 * Automated backups are deleted when the DB instance is deleted. 
